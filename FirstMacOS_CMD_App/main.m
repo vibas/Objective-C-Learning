@@ -12,15 +12,17 @@ void HelloWorld(void);
 void VariableTest(void);
 void CalculatorTest(void);
 void TestLoop(void);
+void TestBlock(void);
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        HelloWorld();
-        VariableTest();
-        CalculatorTest();
-        TestLoop();
+//        HelloWorld();
+//        VariableTest();
+//        CalculatorTest();
+//        TestLoop();
+        TestBlock();
     }
     return 0;
 }
@@ -69,5 +71,13 @@ void TestLoop()
         [loopTest DoWhileLoop];
         [loopTest NestedLoop];
     }
+}
+
+void TestBlock()
+{
+    BlockTest *block = [[BlockTest alloc] init];
+    [block FuncionCallWithBlockParam:^(int i){
+        NSLog(@"Block called after the function call. Block ID - %d " , i);
+    }];
 }
 

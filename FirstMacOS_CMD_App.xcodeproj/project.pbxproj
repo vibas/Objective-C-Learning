@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31A6C76129B207CD00ECCF2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A6C76029B207CD00ECCF2F /* main.m */; };
+		31DF43B629C1FD7D0003D3EE /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF43B529C1FD7D0003D3EE /* BlockTest.m */; };
 		31EC860029BB4B28008C717D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC85FF29BB4B28008C717D /* Calculator.m */; };
 		31EC860329BB53F9008C717D /* LoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC860229BB53F9008C717D /* LoopTest.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		31A6C75D29B207CD00ECCF2F /* FirstMacOS_CMD_App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstMacOS_CMD_App; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A6C76029B207CD00ECCF2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31DF43B529C1FD7D0003D3EE /* BlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
 		31EC85FF29BB4B28008C717D /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		31EC860129BB5092008C717D /* MyClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClasses.h; sourceTree = "<group>"; };
 		31EC860229BB53F9008C717D /* LoopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopTest.m; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				31EC85FF29BB4B28008C717D /* Calculator.m */,
 				31EC860129BB5092008C717D /* MyClasses.h */,
 				31EC860229BB53F9008C717D /* LoopTest.m */,
+				31DF43B529C1FD7D0003D3EE /* BlockTest.m */,
 			);
 			path = FirstMacOS_CMD_App;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31EC860329BB53F9008C717D /* LoopTest.m in Sources */,
+				31DF43B629C1FD7D0003D3EE /* BlockTest.m in Sources */,
 				31A6C76129B207CD00ECCF2F /* main.m in Sources */,
 				31EC860029BB4B28008C717D /* Calculator.m in Sources */,
 			);

@@ -25,3 +25,8 @@
 -(void) DoWhileLoop;
 -(void) NestedLoop;
 @end
+
+typedef void (^CompletionBlock)(int);
+@interface BlockTest : NSObject
+-(void) FuncionCallWithBlockParam : (CompletionBlock)completionBlock;
+@end
