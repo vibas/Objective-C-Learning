@@ -1,7 +1,7 @@
 //
 //  Calculator.m
 //  FirstMacOS_CMD_App
-//
+//  Function Test
 //  Created by Vibas on 10/03/23.
 //
 

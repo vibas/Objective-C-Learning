@@ -29,4 +29,5 @@
 typedef void (^CompletionBlock)(int);
 @interface BlockTest : NSObject
 -(void) FuncionCallWithBlockParam : (CompletionBlock)completionBlock;
+
 @end

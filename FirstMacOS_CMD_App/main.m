@@ -10,9 +10,14 @@
 
 void HelloWorld(void);
 void VariableTest(void);
-void CalculatorTest(void);
+void CalculatorFunctionTest(void);
 void TestLoop(void);
+
 void TestBlock(void);
+double (^multiplyTwoValues)(double, double) = ^(double firstValue, double secondValue)
+{
+    return firstValue * secondValue;
+};
 
 int main(int argc, const char * argv[])
 {
@@ -20,7 +25,7 @@ int main(int argc, const char * argv[])
     {
 //        HelloWorld();
 //        VariableTest();
-//        CalculatorTest();
+//        CalculatorFunctionTest();
 //        TestLoop();
         TestBlock();
     }
@@ -52,7 +57,7 @@ void VariableTest()
     }
 }
 
-void CalculatorTest()
+void CalculatorFunctionTest()
 {
     // CALCULATOR
     {
@@ -75,6 +80,11 @@ void TestLoop()
 
 void TestBlock()
 {
+    // Direct call to a block as a method call
+    double result = multiplyTwoValues(2,4);
+    NSLog(@"Multiplication result = %f", result);
+    
+    // Pass a block to another method as parameter and execute it inside the called method
     BlockTest *block = [[BlockTest alloc] init];
     [block FuncionCallWithBlockParam:^(int i){
         NSLog(@"Block called after the function call. Block ID - %d " , i);
