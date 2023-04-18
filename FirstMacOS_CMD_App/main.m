@@ -19,15 +19,34 @@ double (^multiplyTwoValues)(double, double) = ^(double firstValue, double second
     return firstValue * secondValue;
 };
 
+void TestNSNumbers(void);
+void TestArray(void);
+
 int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
+        //Lession 1 - Print Hello World
 //        HelloWorld();
+        
+        // Lession 2 - Variable and Datatypes
 //        VariableTest();
+        
+        // Lession 3 - Functions
 //        CalculatorFunctionTest();
+        
+        // Lession 4 - Loops
 //        TestLoop();
-        TestBlock();
+        
+        // Lession 5 - Blocks
+//        TestBlock();
+        
+        // Lession 6 - Numbers
+//        TestNSNumbers();
+        
+        // Lession 7 - Array
+        TestArray();
+        
     }
     return 0;
 }
@@ -48,12 +67,16 @@ void VariableTest()
         char c = 'V';
         double d = 500000.5;
         Byte b = 20;
+        char *cc = "Hello World";
+        NSString *s = @"NSString Hello World";
         
         NSLog(@"int %d",i);
         NSLog(@"float %f",f);
         NSLog(@"char %c",c);
         NSLog(@"double %f", d);
         NSLog(@"byte %d",b);
+        NSLog(@"string %s",cc);
+        NSLog(@"%@" , s);
     }
 }
 
@@ -91,3 +114,24 @@ void TestBlock()
     }];
 }
 
+void TestNSNumbers()
+{
+    NSNumberTest *nsNumTest = [[NSNumberTest alloc]init];
+    
+    // Use of NSNumber to store bool value
+    NSNumber *num_bool = [NSNumber alloc];
+    num_bool = [num_bool initWithBool:false];
+    NSLog(@"NSNumber as bool %s ",[num_bool boolValue]?"true":"false");
+    
+    NSNumber *num1 = [NSNumber numberWithFloat:10.5];
+    NSNumber *num2 = [NSNumber numberWithFloat:2];
+    NSNumber *result = [nsNumTest multiply:num1 b:num2];
+    NSLog(@"NSNumber Test Multiplication Resilt : %f", [result floatValue]);
+}
+
+void TestArray()
+{
+    ArrayTest *arrayTest = [ArrayTest alloc];
+    [arrayTest OneDimensionalArray];
+    [arrayTest MultiDimensionalArray];
+}

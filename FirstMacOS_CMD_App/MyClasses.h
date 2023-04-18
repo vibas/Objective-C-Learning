@@ -29,5 +29,13 @@
 typedef void (^CompletionBlock)(int);
 @interface BlockTest : NSObject
 -(void) FuncionCallWithBlockParam : (CompletionBlock)completionBlock;
+@end
 
+@interface NSNumberTest : NSObject
+- (NSNumber *)multiply:(NSNumber *)a b:(NSNumber *)b;
+@end
+
+@interface ArrayTest : NSObject
+-(void) OneDimensionalArray;
+-(void) MultiDimensionalArray;
 @end
