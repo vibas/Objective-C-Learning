@@ -39,3 +39,11 @@ typedef void (^CompletionBlock)(int);
 -(void) OneDimensionalArray;
 -(void) MultiDimensionalArray;
 @end
+
+@interface PointerTest : NSObject
+-(void) TestVariableAddress;
+-(void) TestPointerUse;
+-(void) TestPointerArithmaticOp;
+-(void) TestPointerComparision;
+-(void) TestArrayOfPoiners;
+@end

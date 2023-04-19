@@ -21,6 +21,7 @@ double (^multiplyTwoValues)(double, double) = ^(double firstValue, double second
 
 void TestNSNumbers(void);
 void TestArray(void);
+void TestPointer(void);
 
 int main(int argc, const char * argv[])
 {
@@ -45,7 +46,10 @@ int main(int argc, const char * argv[])
 //        TestNSNumbers();
         
         // Lession 7 - Array
-        TestArray();
+//        TestArray();
+        
+        // Lession 8 - Poiners
+        TestPointer();
         
     }
     return 0;
@@ -134,4 +138,15 @@ void TestArray()
     ArrayTest *arrayTest = [ArrayTest alloc];
     [arrayTest OneDimensionalArray];
     [arrayTest MultiDimensionalArray];
+}
+
+
+void TestPointer()
+{
+    PointerTest *pointerTest = [PointerTest alloc];
+//    [pointerTest TestVariableAddress];
+//    [pointerTest TestPointerUse];
+//    [pointerTest TestPointerArithmaticOp];
+//    [pointerTest TestPointerComparision];
+    [pointerTest TestArrayOfPoiners];
 }
