@@ -100,11 +100,71 @@
         NSLog(@"%x %d", intPtrArray[i], *intPtrArray[i]);
     }
     
-    NSLog(@"Array of pointers to character");
+    NSLog(@"Array of pointers to character to store strings");
     char *names[] ={"Player1", "Player2", "Player3"};
     for(int i=0;i<3;i++)
     {
         NSLog(@"%s",names[i]);
     }
 }
+
+-(void) TestPointerToPointer
+{
+    NSLog(@"Test Pointer to pointer");
+    
+    int  var;
+    int  *ptr;
+    int  **pptr;
+
+    var = 3000;
+
+    /* take the address of var */
+    ptr = &var;
+
+    /* take the address of ptr using address of operator & */
+    pptr = &ptr;
+
+    /* take the value using pptr */
+    NSLog(@"Value of var = %d\n", var );
+    NSLog(@"Value available at *ptr = %d\n", *ptr );
+    NSLog(@"Value available at **pptr = %d\n", **pptr);
+}
+
+-(void) TestPassingPointerToFunction
+{
+    int intVar = 100;
+    int *ptr = &intVar;
+    NSLog(@"BEFORE FUNC CALL : intVar = %d",intVar);
+    NSLog(@"BEFORE FUNC CALL : *ptr = %d",*ptr);
+    
+    [self FunctionWithPointerParam:ptr];
+    
+    NSLog(@"AFTER FUNC CALL : intVar = %d",intVar);
+    NSLog(@"AFTER FUNC CALL : *ptr = %d",*ptr);
+    
+    int arr[5] = {2,5,7,8,8};
+    double average = [self GetAverage:arr ofSize:5];
+    NSLog(@"Average of array elements = %f", average);
+}
+
+-(void) FunctionWithPointerParam : (int*) ptr
+{
+    *ptr = 500;
+}
+
+//The function, which can accept a pointer, can also accept an array
+- (double) GetAverage:(int *)arr ofSize:(int) size
+{
+   int i, sum = 0;
+   double avg;
+
+   for (i = 0; i < size; ++i)
+   {
+      sum += arr[i];
+   }
+
+   avg = (double)sum / size;
+   return avg;
+}
+
 @end

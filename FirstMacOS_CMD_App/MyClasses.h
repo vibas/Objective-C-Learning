@@ -46,4 +46,6 @@ typedef void (^CompletionBlock)(int);
 -(void) TestPointerArithmaticOp;
 -(void) TestPointerComparision;
 -(void) TestArrayOfPoiners;
+-(void) TestPointerToPointer;
+-(void) TestPassingPointerToFunction;
 @end

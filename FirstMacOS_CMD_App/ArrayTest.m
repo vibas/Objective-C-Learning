@@ -69,6 +69,9 @@
     int* rand_int_Array = [self GetRandomIntArray];
     NSLog(@"RANDOM INT ARRAY ITEMS");
     [self PrintOneDimensionalIntArray:rand_int_Array withSize:10];
+    
+    // Pointer to an array
+    [self PointerToAnArray];
 }
 
 -(void) MultiDimensionalArray
@@ -79,6 +82,7 @@
     [self PrintMultiDimensionalIntArray:two_diemensionalArray];
 }
 
+// Passing 1 dimensional array to a function
 -(void) PrintOneDimensionalIntArray:(int []) arr withSize:(int) size
 {
     NSLog(@"PrintOneDimensionalIntArray");
@@ -88,6 +92,7 @@
     }
 }
 
+// Passing 2 dimensional array to a function
 -(void) PrintMultiDimensionalIntArray:(int [2][3])arr
 {
     for(int i=0;i<2;i++)
@@ -121,4 +126,30 @@
     }
     return  randArray;
 }
+
+-(void) PointerToAnArray
+{
+    /* an array with 5 elements */
+    double balance[5] = {1000.0, 2.0, 3.4, 17.0, 50.0};
+    double *p;
+    int i;
+    
+    // Assign array to pointer means p is pointing to the first element of the array
+    p = balance;
+     
+    /* output each array element's value */
+    NSLog( @"Array values using pointer\n");
+    for ( i = 0; i < 5; i++ )
+    {
+        NSLog(@"*(p + %d) : %f\n",  i, *(p + i));
+    }
+
+    NSLog(@"Array values using balance as address\n");
+    // *balance is also a pointer pointing to the first element of array balance
+    for ( i = 0; i < 5; i++ )
+    {
+        NSLog(@"*(balance + %d) : %f\n",  i, *(balance + i) );
+    }
+}
+
 @end

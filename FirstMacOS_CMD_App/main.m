@@ -141,7 +141,7 @@ void TestArray()
 {
     ArrayTest *arrayTest = [ArrayTest alloc];
     [arrayTest OneDimensionalArray];
-    [arrayTest MultiDimensionalArray];
+//    [arrayTest MultiDimensionalArray];
 }
 
 
@@ -152,7 +152,9 @@ void TestPointer()
 //    [pointerTest TestPointerUse];
 //    [pointerTest TestPointerArithmaticOp];
 //    [pointerTest TestPointerComparision];
-    [pointerTest TestArrayOfPoiners];
+//    [pointerTest TestArrayOfPoiners];
+//    [pointerTest TestPointerToPointer];
+//    [pointerTest TestPassingPointerToFunction];
 }
 
 void TestCCall()
