@@ -9,7 +9,7 @@
 
 int AddTwoNumbers(int a , int b)
 {
-    printf("C Prints result %d",a+b);
+    printf("C Prints result %d \n",a+b);
     return  a+b;
 }
 

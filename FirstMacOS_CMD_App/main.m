@@ -23,6 +23,7 @@ double (^multiplyTwoValues)(double, double) = ^(double firstValue, double second
 void TestNSNumbers(void);
 void TestArray(void);
 void TestPointer(void);
+void TestCCall(void);
 
 int main(int argc, const char * argv[])
 {
@@ -53,9 +54,7 @@ int main(int argc, const char * argv[])
 //        TestPointer();
         
         // Call C Function
-        int sum =  AddTwoNumbers(10, 20);
-        NSLog(@"OBJECTIVE-C PRINT SUM = %d",sum);
-        
+//        TestCCall();
     }
     return 0;
 }
@@ -154,4 +153,10 @@ void TestPointer()
 //    [pointerTest TestPointerArithmaticOp];
 //    [pointerTest TestPointerComparision];
     [pointerTest TestArrayOfPoiners];
+}
+
+void TestCCall()
+{
+    int sum =  AddTwoNumbers(10, 20);
+    NSLog(@"OBJECTIVE-C PRINT SUM = %d",sum);
 }
