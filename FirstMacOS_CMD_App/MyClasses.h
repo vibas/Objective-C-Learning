@@ -53,3 +53,7 @@ typedef void (^CompletionBlock)(int);
 @interface StringTest : NSObject
 -(void) TestString;
 @end
+
+@interface StructureTest : NSObject
+-(void) TestStruct;
+@end

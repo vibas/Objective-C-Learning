@@ -25,6 +25,7 @@ void TestArray(void);
 void TestPointer(void);
 void TestCCall(void);
 void TestStrings(void);
+void TestStruct(void);
 
 int main(int argc, const char * argv[])
 {
@@ -58,7 +59,10 @@ int main(int argc, const char * argv[])
 //        TestCCall();
         
         // Lession 9 - Strings
-        TestStrings();
+//        TestStrings();
+        
+        // Lession 10 - Structures
+        TestStruct();
     }
     return 0;
 }
@@ -170,4 +174,10 @@ void TestStrings()
 {
     StringTest *str_test = [StringTest alloc];
     [str_test TestString];
+}
+
+void TestStruct()
+{
+    StructureTest *struct_test = [StructureTest alloc];
+    [struct_test TestStruct];
 }
