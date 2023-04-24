@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3176CC2129F2BBD10049BFFE /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 3176CC2029F2BBD10049BFFE /* Test.c */; };
 		31A23BCA29EFE359009F9780 /* PointerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A23BC929EFE359009F9780 /* PointerTest.m */; };
 		31A6C76129B207CD00ECCF2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A6C76029B207CD00ECCF2F /* main.m */; };
 		31C93A4E29EE7CBA00FCE5CA /* NSNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C93A4D29EE7CBA00FCE5CA /* NSNumberTest.m */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3176CC1F29F2BBD10049BFFE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		3176CC2029F2BBD10049BFFE /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
 		31A23BC929EFE359009F9780 /* PointerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerTest.m; sourceTree = "<group>"; };
 		31A6C75D29B207CD00ECCF2F /* FirstMacOS_CMD_App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstMacOS_CMD_App; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A6C76029B207CD00ECCF2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				31C93A4D29EE7CBA00FCE5CA /* NSNumberTest.m */,
 				31C93A5129EEA1AE00FCE5CA /* ArrayTest.m */,
 				31A23BC929EFE359009F9780 /* PointerTest.m */,
+				3176CC1F29F2BBD10049BFFE /* Test.h */,
+				3176CC2029F2BBD10049BFFE /* Test.c */,
 			);
 			path = FirstMacOS_CMD_App;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				31A23BCA29EFE359009F9780 /* PointerTest.m in Sources */,
 				31C93A4E29EE7CBA00FCE5CA /* NSNumberTest.m in Sources */,
 				31EC860029BB4B28008C717D /* Calculator.m in Sources */,
+				3176CC2129F2BBD10049BFFE /* Test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,16 +270,22 @@
 		31A6C76529B207CD00ECCF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		31A6C76629B207CD00ECCF2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MyClasses.h"
+#import "Test.h"
 
 void HelloWorld(void);
 void VariableTest(void);
@@ -49,7 +50,11 @@ int main(int argc, const char * argv[])
 //        TestArray();
         
         // Lession 8 - Poiners
-        TestPointer();
+//        TestPointer();
+        
+        // Call C Function
+        int sum =  AddTwoNumbers(10, 20);
+        NSLog(@"OBJECTIVE-C PRINT SUM = %d",sum);
         
     }
     return 0;
