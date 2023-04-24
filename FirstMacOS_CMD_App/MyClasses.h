@@ -49,3 +49,7 @@ typedef void (^CompletionBlock)(int);
 -(void) TestPointerToPointer;
 -(void) TestPassingPointerToFunction;
 @end
+
+@interface StringTest : NSObject
+-(void) TestString;
+@end

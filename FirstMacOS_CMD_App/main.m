@@ -24,6 +24,7 @@ void TestNSNumbers(void);
 void TestArray(void);
 void TestPointer(void);
 void TestCCall(void);
+void TestStrings(void);
 
 int main(int argc, const char * argv[])
 {
@@ -55,6 +56,9 @@ int main(int argc, const char * argv[])
         
         // Call C Function
 //        TestCCall();
+        
+        // Lession 9 - Strings
+        TestStrings();
     }
     return 0;
 }
@@ -141,9 +145,8 @@ void TestArray()
 {
     ArrayTest *arrayTest = [ArrayTest alloc];
     [arrayTest OneDimensionalArray];
-//    [arrayTest MultiDimensionalArray];
+    [arrayTest MultiDimensionalArray];
 }
-
 
 void TestPointer()
 {
@@ -161,4 +164,10 @@ void TestCCall()
 {
     int sum =  AddTwoNumbers(10, 20);
     NSLog(@"OBJECTIVE-C PRINT SUM = %d",sum);
+}
+
+void TestStrings()
+{
+    StringTest *str_test = [StringTest alloc];
+    [str_test TestString];
 }
