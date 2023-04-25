@@ -32,6 +32,12 @@
 #define MaxOf2(a,b) \
 (a>b)? a : b
 
+#if DEBUG == 0
+#define DebugLog(...)
+#elif DEBUG == 1
+#define DebugLog(...) NSLog(__VA_ARGS__)
+#endif
+
 // Typedef
 typedef int NumberArray[];
 typedef char *StringArray[];
@@ -56,6 +62,7 @@ void TestStrings(void);
 void TestStruct(void);
 void TestPreprocessor(void);
 void TestTypedef(void);
+void TestConfigurableLogger(void);
 
 #pragma mark - Main Function
 int main(int argc, const char * argv[])
@@ -99,7 +106,11 @@ int main(int argc, const char * argv[])
 //        TestPreprocessor();
         
         // Lession 12 - Typedef
-        TestTypedef();
+//        TestTypedef();
+        
+        // Lession 13 - Logger Configuration
+        TestConfigurableLogger();
+        
     }
     return 0;
 }
@@ -248,4 +259,11 @@ void TestTypedef()
         NSLog(@"%d",numbers[i]);
         NSLog(@"%s",strings[i]);
     }
+}
+
+void TestConfigurableLogger()
+{
+    DebugLog(@"Debug log, our custom addition gets \
+      printed during debug only" );
+    NSLog(@"NSLog gets printed always" );
 }
