@@ -9,6 +9,7 @@
 #import "MyClasses.h"
 #include "Test.h"
 
+// define
 #define APP_NAME "Learn Obj-C"
 #define VERSION 1.0
 
@@ -31,6 +32,10 @@
 #define MaxOf2(a,b) \
 (a>b)? a : b
 
+// Typedef
+typedef int NumberArray[];
+typedef char *StringArray[];
+
 #pragma mark - Method Declaration
 void HelloWorld(void);
 void VariableTest(void);
@@ -50,6 +55,7 @@ void TestCCall(void);
 void TestStrings(void);
 void TestStruct(void);
 void TestPreprocessor(void);
+void TestTypedef(void);
 
 #pragma mark - Main Function
 int main(int argc, const char * argv[])
@@ -90,7 +96,10 @@ int main(int argc, const char * argv[])
 //        TestStruct();
         
         // Lession 11 - Preprocessor
-        TestPreprocessor();
+//        TestPreprocessor();
+        
+        // Lession 12 - Typedef
+        TestTypedef();
     }
     return 0;
 }
@@ -227,4 +236,16 @@ void TestPreprocessor()
     NSLog(@"Macro test : Square(a) = %d", Square(5));
     message_for(vibas, behera);
     NSLog(@"Macro test : MaxOf2(a,b) = %d", MaxOf2(5, 6));
+}
+
+void TestTypedef()
+{
+    NumberArray numbers = {1,2,3};
+    StringArray strings = {"Hello", "World","!"};
+    
+    for(int i=0;i<3;i++)
+    {
+        NSLog(@"%d",numbers[i]);
+        NSLog(@"%s",strings[i]);
+    }
 }

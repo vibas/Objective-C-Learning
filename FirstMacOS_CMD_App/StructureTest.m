@@ -10,14 +10,20 @@
 
 @implementation StructureTest
 
-struct Book
+typedef struct Book
 {
     int ID;
     NSString *Name;
-};
+}BOOK;
 
 -(void) TestStruct
 {
+    // Using typedef defined type name for the structure book
+    BOOK b;
+    b.Name = @"Test";
+    b.ID = 1;
+    // ---------------//
+    
     struct Book book1, book2;
     book1.ID = 1;
     book1.Name = @"LET US C";
