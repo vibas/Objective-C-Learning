@@ -7,8 +7,31 @@
 
 #import <Foundation/Foundation.h>
 #import "MyClasses.h"
-#import "Test.h"
+#include "Test.h"
 
+#define APP_NAME "Learn Obj-C"
+#define VERSION 1.0
+
+#ifndef MESSAGE
+   #define MESSAGE "You wish!"
+#endif
+
+#if RELEASE
+#define SERVER_PATH "https//server-path.com"
+#else
+#define SERVER_PATH "http//localhost"
+#endif
+
+// Macro
+#define Add2Numbers(a,b) a+b
+#define Square(a) a*a
+#define  message_for(a, b)  \
+   NSLog(@#a " and " #b ": We love you!\n")
+
+#define MaxOf2(a,b) \
+(a>b)? a : b
+
+#pragma mark - Method Declaration
 void HelloWorld(void);
 void VariableTest(void);
 void CalculatorFunctionTest(void);
@@ -26,7 +49,9 @@ void TestPointer(void);
 void TestCCall(void);
 void TestStrings(void);
 void TestStruct(void);
+void TestPreprocessor(void);
 
+#pragma mark - Main Function
 int main(int argc, const char * argv[])
 {
     @autoreleasepool
@@ -62,12 +87,15 @@ int main(int argc, const char * argv[])
 //        TestStrings();
         
         // Lession 10 - Structures
-        TestStruct();
+//        TestStruct();
+        
+        // Lession 11 - Preprocessor
+        TestPreprocessor();
     }
     return 0;
 }
 
-
+#pragma mark - Method Definition
 void HelloWorld()
 {
     NSString *s = @"Hello world!";
@@ -180,4 +208,23 @@ void TestStruct()
 {
     StructureTest *struct_test = [StructureTest alloc];
     [struct_test TestStruct];
+}
+
+void TestPreprocessor()
+{
+    NSLog(@"App Name = %s Version = %f Server Path = %s", APP_NAME, VERSION, SERVER_PATH);
+    
+#if DEBUG
+    NSLog(@"Debug is on. Message : %s",MESSAGE);
+    NSLog(@"Date %s", __DATE__);
+    NSLog(@"Time %s", __TIME__);
+    NSLog(@"File %s",__FILE__);
+    NSLog(@"Line %d", __LINE__);
+    NSLog(@"Stdc %d", __STDC__);
+#endif
+    
+    NSLog(@"Macro test : Add2Numbers(a,b) = %d", Add2Numbers(5,6));
+    NSLog(@"Macro test : Square(a) = %d", Square(5));
+    message_for(vibas, behera);
+    NSLog(@"Macro test : MaxOf2(a,b) = %d", MaxOf2(5, 6));
 }
