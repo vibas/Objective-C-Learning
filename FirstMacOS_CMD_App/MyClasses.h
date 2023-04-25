@@ -57,3 +57,7 @@ typedef void (^CompletionBlock)(int);
 @interface StructureTest : NSObject
 -(void) TestStruct;
 @end
+
+@interface NSErrorTest:NSObject
+-(NSString *) getEmployeeNameForID:(int) id withError:(NSError **)errorPtr;
+@end

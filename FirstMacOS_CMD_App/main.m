@@ -63,6 +63,7 @@ void TestStruct(void);
 void TestPreprocessor(void);
 void TestTypedef(void);
 void TestConfigurableLogger(void);
+void TestNSError(void);
 
 #pragma mark - Main Function
 int main(int argc, const char * argv[])
@@ -109,7 +110,10 @@ int main(int argc, const char * argv[])
 //        TestTypedef();
         
         // Lession 13 - Logger Configuration
-        TestConfigurableLogger();
+//        TestConfigurableLogger();
+        
+        // Lession 14 - NSError
+        TestNSError();
         
     }
     return 0;
@@ -263,7 +267,34 @@ void TestTypedef()
 
 void TestConfigurableLogger()
 {
-    DebugLog(@"Debug log, our custom addition gets \
-      printed during debug only" );
+    DebugLog(@"Debug log, our custom addition gets printed during debug only");
     NSLog(@"NSLog gets printed always" );
+}
+
+void TestNSError()
+{
+    NSErrorTest *sampleClass = [[NSErrorTest alloc]init];
+    NSError *error = nil;
+    NSString *name1 = [sampleClass getEmployeeNameForID:1 withError:&error];
+      
+    if(error)
+    {
+        NSLog(@"Error finding Name1: %@",error);
+    }
+    else
+    {
+        NSLog(@"Name1: %@",name1);
+    }
+       
+    error = nil;
+    NSString *name2 = [sampleClass getEmployeeNameForID:2 withError:&error];
+
+    if(error)
+    {
+        NSLog(@"Error finding Name2: %@",error);
+    }
+    else
+    {
+        NSLog(@"Name2: %@",name2);
+    }
 }

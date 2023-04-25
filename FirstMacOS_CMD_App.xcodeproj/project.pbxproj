@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3100118529F7DB2D00BB2C21 /* NSErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118429F7DB2D00BB2C21 /* NSErrorTest.m */; };
 		3176CC2129F2BBD10049BFFE /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 3176CC2029F2BBD10049BFFE /* Test.c */; };
 		318A8E4429F67B2000348986 /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4329F67B2000348986 /* StringTest.m */; };
 		318A8E4629F6874500348986 /* StructureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4529F6874500348986 /* StructureTest.m */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3100118429F7DB2D00BB2C21 /* NSErrorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSErrorTest.m; sourceTree = "<group>"; };
 		3176CC1F29F2BBD10049BFFE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3176CC2029F2BBD10049BFFE /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
 		318A8E4329F67B2000348986 /* StringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3176CC2029F2BBD10049BFFE /* Test.c */,
 				318A8E4329F67B2000348986 /* StringTest.m */,
 				318A8E4529F6874500348986 /* StructureTest.m */,
+				3100118429F7DB2D00BB2C21 /* NSErrorTest.m */,
 			);
 			path = FirstMacOS_CMD_App;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				31C93A4E29EE7CBA00FCE5CA /* NSNumberTest.m in Sources */,
 				31EC860029BB4B28008C717D /* Calculator.m in Sources */,
 				3176CC2129F2BBD10049BFFE /* Test.c in Sources */,
+				3100118529F7DB2D00BB2C21 /* NSErrorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
