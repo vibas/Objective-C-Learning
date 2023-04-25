@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3100118529F7DB2D00BB2C21 /* NSErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118429F7DB2D00BB2C21 /* NSErrorTest.m */; };
+		3100118829F7E7EA00BB2C21 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118729F7E7EA00BB2C21 /* Box.m */; };
 		3176CC2129F2BBD10049BFFE /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 3176CC2029F2BBD10049BFFE /* Test.c */; };
 		318A8E4429F67B2000348986 /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4329F67B2000348986 /* StringTest.m */; };
 		318A8E4629F6874500348986 /* StructureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4529F6874500348986 /* StructureTest.m */; };
@@ -34,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		3100118429F7DB2D00BB2C21 /* NSErrorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSErrorTest.m; sourceTree = "<group>"; };
+		3100118729F7E7EA00BB2C21 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		3100118929F7E81A00BB2C21 /* OOPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS.h; sourceTree = "<group>"; };
 		3176CC1F29F2BBD10049BFFE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3176CC2029F2BBD10049BFFE /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
 		318A8E4329F67B2000348986 /* StringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
@@ -60,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3100118629F7E7CE00BB2C21 /* OOPS */ = {
+			isa = PBXGroup;
+			children = (
+				3100118729F7E7EA00BB2C21 /* Box.m */,
+				3100118929F7E81A00BB2C21 /* OOPS.h */,
+			);
+			path = OOPS;
+			sourceTree = "<group>";
+		};
 		31A6C75429B207CD00ECCF2F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 		31A6C75F29B207CD00ECCF2F /* FirstMacOS_CMD_App */ = {
 			isa = PBXGroup;
 			children = (
+				3100118629F7E7CE00BB2C21 /* OOPS */,
 				31A6C76029B207CD00ECCF2F /* main.m */,
 				31EC85FF29BB4B28008C717D /* Calculator.m */,
 				31EC860129BB5092008C717D /* MyClasses.h */,
@@ -162,6 +175,7 @@
 				318A8E4429F67B2000348986 /* StringTest.m in Sources */,
 				31C93A4E29EE7CBA00FCE5CA /* NSNumberTest.m in Sources */,
 				31EC860029BB4B28008C717D /* Calculator.m in Sources */,
+				3100118829F7E7EA00BB2C21 /* Box.m in Sources */,
 				3176CC2129F2BBD10049BFFE /* Test.c in Sources */,
 				3100118529F7DB2D00BB2C21 /* NSErrorTest.m in Sources */,
 			);

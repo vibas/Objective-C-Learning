@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MyClasses.h"
+#import "OOPS.h"
 #include "Test.h"
 
 // define
@@ -67,6 +68,8 @@ void TestTypedef(void);
 void TestConfigurableLogger(void);
 void TestNSError(void);
 
+void TestClassAndObject(void);
+
 #pragma mark - Main Function
 int main(int argc, const char * argv[])
 {
@@ -120,6 +123,8 @@ int main(int argc, const char * argv[])
         // Lession 14 - NSError
 //        TestNSError();
         
+        // Lession 15 - Class & Object
+        TestClassAndObject();
     }
     return 0;
 }
@@ -302,4 +307,12 @@ void TestNSError()
     {
         NSLog(@"Name2: %@",name2);
     }
+}
+
+void TestClassAndObject()
+{
+    Box *box1 = [[Box alloc] init:5 breadth:5];
+    box1.Height = 6;
+    float volume = [box1 Volume];
+    NSLog(@"Volume of box1 = %f", volume);
 }
