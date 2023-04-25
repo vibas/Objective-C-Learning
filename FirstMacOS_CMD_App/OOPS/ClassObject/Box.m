@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OOPS.h"
+#import "OOPS_ClassObject.h"
 
 @implementation Box
 

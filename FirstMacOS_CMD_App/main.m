@@ -7,7 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "MyClasses.h"
-#import "OOPS.h"
+#import "OOPS_ClassObject.h"
+#import "OOPS_Inheritance.h"
 #include "Test.h"
 
 // define
@@ -69,6 +70,7 @@ void TestConfigurableLogger(void);
 void TestNSError(void);
 
 void TestClassAndObject(void);
+void TestInheritance(void);
 
 #pragma mark - Main Function
 int main(int argc, const char * argv[])
@@ -124,7 +126,10 @@ int main(int argc, const char * argv[])
 //        TestNSError();
         
         // Lession 15 - Class & Object
-        TestClassAndObject();
+//        TestClassAndObject();
+        
+        // Lession 16 - Inheritance
+        TestInheritance();
     }
     return 0;
 }
@@ -315,4 +320,19 @@ void TestClassAndObject()
     box1.Height = 6;
     float volume = [box1 Volume];
     NSLog(@"Volume of box1 = %f", volume);
+}
+
+void TestInheritance()
+{
+    // Base class
+    Bird *bird = [[Bird alloc]init:@"Bird"];
+    [bird PrintBirdInfo];
+    
+    // Derived class - Crow
+    Crow *crow = [[Crow alloc]init:@"Crow" movementType:@"Fly"];
+    [crow PrintBirdInfo];
+    
+    // Derived class - Duck
+    Duck *duck = [[Duck alloc]init:@"Duck" movementType:@"Swim"];
+    [duck PrintBirdInfo];
 }

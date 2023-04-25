@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3100118529F7DB2D00BB2C21 /* NSErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118429F7DB2D00BB2C21 /* NSErrorTest.m */; };
 		3100118829F7E7EA00BB2C21 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118729F7E7EA00BB2C21 /* Box.m */; };
+		3100118B29F7FB7D00BB2C21 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118A29F7FB7D00BB2C21 /* Bird.m */; };
+		3100118D29F7FCEB00BB2C21 /* Crow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118C29F7FCEB00BB2C21 /* Crow.m */; };
+		3100118F29F7FE1200BB2C21 /* Duck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3100118E29F7FE1200BB2C21 /* Duck.m */; };
 		3176CC2129F2BBD10049BFFE /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 3176CC2029F2BBD10049BFFE /* Test.c */; };
 		318A8E4429F67B2000348986 /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4329F67B2000348986 /* StringTest.m */; };
 		318A8E4629F6874500348986 /* StructureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4529F6874500348986 /* StructureTest.m */; };
@@ -36,7 +39,11 @@
 /* Begin PBXFileReference section */
 		3100118429F7DB2D00BB2C21 /* NSErrorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSErrorTest.m; sourceTree = "<group>"; };
 		3100118729F7E7EA00BB2C21 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
-		3100118929F7E81A00BB2C21 /* OOPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS.h; sourceTree = "<group>"; };
+		3100118A29F7FB7D00BB2C21 /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		3100118C29F7FCEB00BB2C21 /* Crow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crow.m; sourceTree = "<group>"; };
+		3100118E29F7FE1200BB2C21 /* Duck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Duck.m; sourceTree = "<group>"; };
+		3100119229F7FF0900BB2C21 /* OOPS_ClassObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS_ClassObject.h; sourceTree = "<group>"; };
+		3100119329F7FF2C00BB2C21 /* OOPS_Inheritance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS_Inheritance.h; sourceTree = "<group>"; };
 		3176CC1F29F2BBD10049BFFE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3176CC2029F2BBD10049BFFE /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
 		318A8E4329F67B2000348986 /* StringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
@@ -66,10 +73,30 @@
 		3100118629F7E7CE00BB2C21 /* OOPS */ = {
 			isa = PBXGroup;
 			children = (
-				3100118729F7E7EA00BB2C21 /* Box.m */,
-				3100118929F7E81A00BB2C21 /* OOPS.h */,
+				3100119129F7FED800BB2C21 /* ClassObject */,
+				3100119029F7FEBC00BB2C21 /* Inheritance */,
 			);
 			path = OOPS;
+			sourceTree = "<group>";
+		};
+		3100119029F7FEBC00BB2C21 /* Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				3100118A29F7FB7D00BB2C21 /* Bird.m */,
+				3100118C29F7FCEB00BB2C21 /* Crow.m */,
+				3100118E29F7FE1200BB2C21 /* Duck.m */,
+				3100119329F7FF2C00BB2C21 /* OOPS_Inheritance.h */,
+			);
+			path = Inheritance;
+			sourceTree = "<group>";
+		};
+		3100119129F7FED800BB2C21 /* ClassObject */ = {
+			isa = PBXGroup;
+			children = (
+				3100118729F7E7EA00BB2C21 /* Box.m */,
+				3100119229F7FF0900BB2C21 /* OOPS_ClassObject.h */,
+			);
+			path = ClassObject;
 			sourceTree = "<group>";
 		};
 		31A6C75429B207CD00ECCF2F = {
@@ -166,6 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3100118F29F7FE1200BB2C21 /* Duck.m in Sources */,
+				3100118D29F7FCEB00BB2C21 /* Crow.m in Sources */,
+				3100118B29F7FB7D00BB2C21 /* Bird.m in Sources */,
 				31EC860329BB53F9008C717D /* LoopTest.m in Sources */,
 				318A8E4629F6874500348986 /* StructureTest.m in Sources */,
 				31DF43B629C1FD7D0003D3EE /* BlockTest.m in Sources */,

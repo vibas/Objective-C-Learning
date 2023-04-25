@@ -1,12 +1,12 @@
 //
-//  OOPS.h
+//  OOPS_ClassObject.h
 //  FirstMacOS_CMD_App
 //
 //  Created by Vibas on 25/04/23.
 //
 
-#ifndef OOPS_h
-#define OOPS_h
+#ifndef OOPS_ClassObject_h
+#define OOPS_ClassObject_h
 
 @interface Box : NSObject
 {
@@ -18,4 +18,4 @@
 -(float) Volume;     // Method declaration
 @end
 
-#endif /* OOPS_h */
+#endif /* OOPS_ClassObject_h */
