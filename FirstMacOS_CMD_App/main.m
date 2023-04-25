@@ -17,6 +17,7 @@
    #define MESSAGE "You wish!"
 #endif
 
+// Go to project -> build settings -> preprocessor macro -> and set the value for RELEASE
 #if RELEASE
 #define SERVER_PATH "https//server-path.com"
 #else
@@ -32,6 +33,7 @@
 #define MaxOf2(a,b) \
 (a>b)? a : b
 
+// Go to project -> build settings -> preprocessor macro -> and set the value for DEBUG
 #if DEBUG == 0
 #define DebugLog(...)
 #elif DEBUG == 1
@@ -68,6 +70,9 @@ void TestNSError(void);
 #pragma mark - Main Function
 int main(int argc, const char * argv[])
 {
+    // Test command line arguments. Select Scheme -> Arguments -> set/change arguments
+    NSLog(@"App Name : %s | App Version : %s \n ================= ", argv[1], argv[2]);
+    
     @autoreleasepool
     {
         //Lession 1 - Print Hello World
@@ -113,7 +118,7 @@ int main(int argc, const char * argv[])
 //        TestConfigurableLogger();
         
         // Lession 14 - NSError
-        TestNSError();
+//        TestNSError();
         
     }
     return 0;
