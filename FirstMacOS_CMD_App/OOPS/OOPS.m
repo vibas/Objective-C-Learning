@@ -10,6 +10,7 @@
 #import "OOPS_ClassObject.h"
 #import "OOPS_Inheritance.h"
 #import "OOPS_Polymorphism.h"
+#import "Student.h"
 
 @implementation OOPS
 
@@ -49,6 +50,12 @@
     [shape PrintArea];
 }
 
+-(void) TestDataEncapsulation
+{
+    Student *student = [[Student alloc] init:@"Vibas"];
+    NSLog(@"Access student's name by using GetStudentName() : %@",[student GetStudentName]);
+}
+
 -(void) Learn
 {
     [super Learn];
@@ -61,7 +68,12 @@
 //    [self TestInheritance];
     
     // Lession 3 - Polymorphism
-    [self TestPolymorphism];
+//    [self TestPolymorphism];
+    
+    // Lession 4 - Data Encapsulation
+//    [self TestDataEncapsulation];
+    
+    
 }
 
 @end

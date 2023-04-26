@@ -28,6 +28,7 @@
 		31EE06B229F94C7200B8F96B /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06B129F94C7200B8F96B /* Shape.m */; };
 		31EE06B429F94C7B00B8F96B /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06B329F94C7B00B8F96B /* Square.m */; };
 		31EE06B629F94C8700B8F96B /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06B529F94C8700B8F96B /* Rectangle.m */; };
+		31EE06BA29F9555400B8F96B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06B929F9555400B8F96B /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +72,8 @@
 		31EE06B129F94C7200B8F96B /* Shape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 		31EE06B329F94C7B00B8F96B /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		31EE06B529F94C8700B8F96B /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		31EE06B829F9548A00B8F96B /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		31EE06B929F9555400B8F96B /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		3100118629F7E7CE00BB2C21 /* OOPS */ = {
 			isa = PBXGroup;
 			children = (
+				31EE06B729F9543200B8F96B /* Encapsulation */,
 				31EE06AF29F93EC300B8F96B /* Polymorphism */,
 				3100119129F7FED800BB2C21 /* ClassObject */,
 				3100119029F7FEBC00BB2C21 /* Inheritance */,
@@ -174,6 +178,15 @@
 			path = Polymorphism;
 			sourceTree = "<group>";
 		};
+		31EE06B729F9543200B8F96B /* Encapsulation */ = {
+			isa = PBXGroup;
+			children = (
+				31EE06B829F9548A00B8F96B /* Student.h */,
+				31EE06B929F9555400B8F96B /* Student.m */,
+			);
+			path = Encapsulation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +255,7 @@
 				31EE06B629F94C8700B8F96B /* Rectangle.m in Sources */,
 				31EE06B429F94C7B00B8F96B /* Square.m in Sources */,
 				31A6C76129B207CD00ECCF2F /* main.m in Sources */,
+				31EE06BA29F9555400B8F96B /* Student.m in Sources */,
 				31EE06AE29F92C9C00B8F96B /* Lession.m in Sources */,
 				31EE06B229F94C7200B8F96B /* Shape.m in Sources */,
 				31C93A5229EEA1AE00FCE5CA /* ArrayTest.m in Sources */,
