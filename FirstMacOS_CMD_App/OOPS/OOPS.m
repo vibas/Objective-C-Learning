@@ -9,6 +9,7 @@
 #import "Lession.h"
 #import "OOPS_ClassObject.h"
 #import "OOPS_Inheritance.h"
+#import "OOPS_Polymorphism.h"
 
 @implementation OOPS
 
@@ -35,6 +36,19 @@
     [duck PrintBirdInfo];
 }
 
+-(void) TestPolymorphism
+{
+    Shape *shape;
+    
+    shape = [[Square alloc]initWithSide:5];
+    [shape CalculateArea];
+    [shape PrintArea];
+    
+    shape = [[Rectangle alloc]initWithLength:5 andBreadth:6];
+    [shape CalculateArea];
+    [shape PrintArea];
+}
+
 -(void) Learn
 {
     [super Learn];
@@ -45,6 +59,9 @@
     
     // Lession 2 - Inheritance
 //    [self TestInheritance];
+    
+    // Lession 3 - Polymorphism
+    [self TestPolymorphism];
 }
 
 @end

@@ -229,46 +229,46 @@ double (^multiplyTwoValues)(double, double) = ^(double firstValue, double second
     [self HelloWorld];
     
     // Lession 2 - Variable and Datatypes
-    [self VariableTest];
+//    [self VariableTest];
     
     // Lession 3 - Functions
-    [self CalculatorFunctionTest];
+//    [self CalculatorFunctionTest];
     
     // Lession 4 - Loops
-    [self TestLoop];
+//    [self TestLoop];
     
     // Lession 5 - Blocks
-    [self TestBlock];
+//    [self TestBlock];
     
     // Lession 6 - Numbers
-    [self TestNSNumbers];
+//    [self TestNSNumbers];
     
     // Lession 7 - Array
-    [self TestArray];
+//    [self TestArray];
     
     // Lession 8 - Poiners
-    [self TestPointer];
+//    [self TestPointer];
     
     // Call C Function
-    [self TestCCall];
+//    [self TestCCall];
     
     // Lession 9 - Strings
-    [self TestStrings];
+//    [self TestStrings];
     
     // Lession 10 - Structures
-    [self TestStruct];
+//    [self TestStruct];
     
     // Lession 11 - Preprocessor
-    [self TestPreprocessor];
+//    [self TestPreprocessor];
     
     // Lession 12 - Typedef
-    [self TestTypedef];
+//    [self TestTypedef];
     
     // Lession 13 - Logger Configuration
-    [self TestConfigurableLogger];
+//    [self TestConfigurableLogger];
     
     // Lession 14 - NSError
-    [self TestNSError];
+//    [self TestNSError];
 }
 
 @end

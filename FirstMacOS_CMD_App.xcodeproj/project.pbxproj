@@ -25,6 +25,9 @@
 		31EC860029BB4B28008C717D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC85FF29BB4B28008C717D /* Calculator.m */; };
 		31EC860329BB53F9008C717D /* LoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC860229BB53F9008C717D /* LoopTest.m */; };
 		31EE06AE29F92C9C00B8F96B /* Lession.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06AD29F92C9C00B8F96B /* Lession.m */; };
+		31EE06B229F94C7200B8F96B /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06B129F94C7200B8F96B /* Shape.m */; };
+		31EE06B429F94C7B00B8F96B /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06B329F94C7B00B8F96B /* Square.m */; };
+		31EE06B629F94C8700B8F96B /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE06B529F94C8700B8F96B /* Rectangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +67,10 @@
 		31EC85FF29BB4B28008C717D /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		31EC860229BB53F9008C717D /* LoopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopTest.m; sourceTree = "<group>"; };
 		31EE06AD29F92C9C00B8F96B /* Lession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lession.m; sourceTree = "<group>"; };
+		31EE06B029F93F5100B8F96B /* OOPS_Polymorphism.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS_Polymorphism.h; sourceTree = "<group>"; };
+		31EE06B129F94C7200B8F96B /* Shape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+		31EE06B329F94C7B00B8F96B /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		31EE06B529F94C8700B8F96B /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +87,7 @@
 		3100118629F7E7CE00BB2C21 /* OOPS */ = {
 			isa = PBXGroup;
 			children = (
+				31EE06AF29F93EC300B8F96B /* Polymorphism */,
 				3100119129F7FED800BB2C21 /* ClassObject */,
 				3100119029F7FEBC00BB2C21 /* Inheritance */,
 				316C4B3729F9214E004F1F01 /* OOPS.m */,
@@ -155,6 +163,17 @@
 			path = FirstMacOS_CMD_App;
 			sourceTree = "<group>";
 		};
+		31EE06AF29F93EC300B8F96B /* Polymorphism */ = {
+			isa = PBXGroup;
+			children = (
+				31EE06B029F93F5100B8F96B /* OOPS_Polymorphism.h */,
+				31EE06B129F94C7200B8F96B /* Shape.m */,
+				31EE06B329F94C7B00B8F96B /* Square.m */,
+				31EE06B529F94C8700B8F96B /* Rectangle.m */,
+			);
+			path = Polymorphism;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,8 +239,11 @@
 				316C4B3829F9214E004F1F01 /* OOPS.m in Sources */,
 				318A8E4629F6874500348986 /* StructureTest.m in Sources */,
 				31DF43B629C1FD7D0003D3EE /* BlockTest.m in Sources */,
+				31EE06B629F94C8700B8F96B /* Rectangle.m in Sources */,
+				31EE06B429F94C7B00B8F96B /* Square.m in Sources */,
 				31A6C76129B207CD00ECCF2F /* main.m in Sources */,
 				31EE06AE29F92C9C00B8F96B /* Lession.m in Sources */,
+				31EE06B229F94C7200B8F96B /* Shape.m in Sources */,
 				31C93A5229EEA1AE00FCE5CA /* ArrayTest.m in Sources */,
 				31A23BCA29EFE359009F9780 /* PointerTest.m in Sources */,
 				318A8E4429F67B2000348986 /* StringTest.m in Sources */,

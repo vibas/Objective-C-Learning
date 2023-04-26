@@ -15,11 +15,9 @@ int main(int argc, const char * argv[])
     
     @autoreleasepool
     {
-//        Lession *basic = [Basic alloc];
-//        [basic Learn];
-        
-        Lession *oops = [OOPS alloc];
-        [oops Learn];
+        // Create lession object and call its Learn method
+        Lession *lession = [OOPS alloc];
+        [lession Learn];
     }
     return 0;
 }
