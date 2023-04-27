@@ -10,6 +10,13 @@
 
 @implementation SampleClass
 
+-(id)init
+{
+    self = [super init];
+    name = @"Vibas";
+    return self;
+}
+
 - (void)setInternalID
 {
    internalID = [NSString stringWithFormat:
@@ -19,6 +26,11 @@
 - (NSString *)getExternalID {
    return [internalID stringByReplacingOccurrencesOfString:
    @"UNIQUEINTERNALKEY" withString:@""];
+}
+
+-(NSString *)getName
+{
+    return  name;
 }
 
 @end

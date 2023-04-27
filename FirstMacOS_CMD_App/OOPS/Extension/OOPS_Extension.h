@@ -12,9 +12,10 @@
 {
    NSString *name;
 }
-
+- (id)init;
 - (void)setInternalID;
 - (NSString *)getExternalID;
+-(NSString *)getName;
 
 @end
 

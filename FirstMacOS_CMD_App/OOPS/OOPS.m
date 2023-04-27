@@ -69,9 +69,9 @@
 
 -(void) TestExtension
 {
-    SampleClass *sampleClass = [SampleClass alloc];
+    SampleClass *sampleClass = [[SampleClass alloc]init];
     [sampleClass setInternalID];
-    NSLog(@"Sample Class External ID : %@",[sampleClass getExternalID]);
+    NSLog(@"Sample Class Name : %@ External ID : %@", [sampleClass getName], [sampleClass getExternalID]);
 }
 
 -(void) Learn
@@ -95,7 +95,7 @@
 //    [self TestCategory];
     
     // Lession 6 - Extension
-    [self TestExtension];
+//    [self TestExtension];
 }
 
 @end
