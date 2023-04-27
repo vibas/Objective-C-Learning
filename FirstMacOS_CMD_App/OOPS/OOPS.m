@@ -11,6 +11,7 @@
 #import "OOPS_Inheritance.h"
 #import "OOPS_Polymorphism.h"
 #import "Student.h"
+#import "OOPS_Category.h"
 
 @implementation OOPS
 
@@ -56,6 +57,15 @@
     NSLog(@"Access student's name by using GetStudentName() : %@",[student GetStudentName]);
 }
 
+-(void) TestCategory
+{
+    NSString *copyrightString = [NSString getCopyRightString];
+    NSLog(@"Accessing Category: %@",copyrightString);
+    
+    NSString *randomString = [NSString getRandomStringWithLength:10];
+    NSLog(@"randomString = %@",randomString);
+}
+
 -(void) Learn
 {
     [super Learn];
@@ -73,7 +83,8 @@
     // Lession 4 - Data Encapsulation
 //    [self TestDataEncapsulation];
     
-    
+    // Lession 5 - Category
+//    [self TestCategory];
 }
 
 @end
