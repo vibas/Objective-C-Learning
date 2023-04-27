@@ -81,6 +81,23 @@
     [protocol_sample startAction];
 }
 
+-(void) TestDynamicBinding
+{
+    Square *square = [[Square alloc]initWithSide:5];
+    [square CalculateArea];
+    
+    Rectangle *rectangle = [[Rectangle alloc]initWithLength:6 andBreadth:7];
+    [rectangle CalculateArea];
+    
+    NSArray *shapes = [[NSArray alloc]initWithObjects:square,rectangle, nil];
+    
+    id obj1 = [shapes objectAtIndex:0];
+    [obj1 PrintArea];
+    
+    id obj2 = [shapes objectAtIndex:1];
+    [obj2 PrintArea];
+}
+
 -(void) Learn
 {
     [super Learn];
@@ -106,6 +123,9 @@
     
     // Lession 7 - Protocol
 //    [self TestProtocol];
+    
+    // Lession 8 - Dynamic binding
+//    [self TestDynamicBinding];
 }
 
 @end
