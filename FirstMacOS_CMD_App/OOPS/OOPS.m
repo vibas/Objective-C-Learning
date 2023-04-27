@@ -12,6 +12,7 @@
 #import "OOPS_Polymorphism.h"
 #import "Student.h"
 #import "OOPS_Category.h"
+#import "OOPS_Extension.h"
 
 @implementation OOPS
 
@@ -66,6 +67,13 @@
     NSLog(@"randomString = %@",randomString);
 }
 
+-(void) TestExtension
+{
+    SampleClass *sampleClass = [SampleClass alloc];
+    [sampleClass setInternalID];
+    NSLog(@"Sample Class External ID : %@",[sampleClass getExternalID]);
+}
+
 -(void) Learn
 {
     [super Learn];
@@ -85,6 +93,9 @@
     
     // Lession 5 - Category
 //    [self TestCategory];
+    
+    // Lession 6 - Extension
+    [self TestExtension];
 }
 
 @end
