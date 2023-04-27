@@ -23,6 +23,7 @@
 		31C93A5229EEA1AE00FCE5CA /* ArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C93A5129EEA1AE00FCE5CA /* ArrayTest.m */; };
 		31CE842F29FA57EE00A7BA77 /* CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE842E29FA57EE00A7BA77 /* CategoryTest.m */; };
 		31CE843829FA8EFA00A7BA77 /* ExtensionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE843729FA8EFA00A7BA77 /* ExtensionTest.m */; };
+		31CE843C29FA9AF200A7BA77 /* ProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE843B29FA9AF200A7BA77 /* ProtocolTest.m */; };
 		31DF43B629C1FD7D0003D3EE /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF43B529C1FD7D0003D3EE /* BlockTest.m */; };
 		31EC860029BB4B28008C717D /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC85FF29BB4B28008C717D /* Calculator.m */; };
 		31EC860329BB53F9008C717D /* LoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC860229BB53F9008C717D /* LoopTest.m */; };
@@ -70,6 +71,8 @@
 		31CE843029FA586600A7BA77 /* OOPS_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS_Category.h; sourceTree = "<group>"; };
 		31CE843629FA8EE700A7BA77 /* OOPS_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS_Extension.h; sourceTree = "<group>"; };
 		31CE843729FA8EFA00A7BA77 /* ExtensionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionTest.m; sourceTree = "<group>"; };
+		31CE843A29FA9A0D00A7BA77 /* OOPS_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOPS_Protocol.h; sourceTree = "<group>"; };
+		31CE843B29FA9AF200A7BA77 /* ProtocolTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolTest.m; sourceTree = "<group>"; };
 		31DF43B529C1FD7D0003D3EE /* BlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
 		31EC85FF29BB4B28008C717D /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		31EC860229BB53F9008C717D /* LoopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopTest.m; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		3100118629F7E7CE00BB2C21 /* OOPS */ = {
 			isa = PBXGroup;
 			children = (
+				31CE843929FA99E600A7BA77 /* Protocol */,
 				31CE843429FA8EB400A7BA77 /* Extension */,
 				31CE842D29FA57D100A7BA77 /* Category */,
 				31EE06B729F9543200B8F96B /* Encapsulation */,
@@ -193,6 +197,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		31CE843929FA99E600A7BA77 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				31CE843A29FA9A0D00A7BA77 /* OOPS_Protocol.h */,
+				31CE843B29FA9AF200A7BA77 /* ProtocolTest.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		31EE06AF29F93EC300B8F96B /* Polymorphism */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +297,7 @@
 				31EE06BA29F9555400B8F96B /* Student.m in Sources */,
 				31EE06AE29F92C9C00B8F96B /* Lession.m in Sources */,
 				31EE06B229F94C7200B8F96B /* Shape.m in Sources */,
+				31CE843C29FA9AF200A7BA77 /* ProtocolTest.m in Sources */,
 				31C93A5229EEA1AE00FCE5CA /* ArrayTest.m in Sources */,
 				31CE843829FA8EFA00A7BA77 /* ExtensionTest.m in Sources */,
 				31A23BCA29EFE359009F9780 /* PointerTest.m in Sources */,

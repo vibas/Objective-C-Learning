@@ -8,7 +8,7 @@
 #ifndef OOPS_Extension_h
 #define OOPS_Extension_h
 
-@interface SampleClass : NSObject
+@interface ExtensionSampleClass : NSObject
 {
    NSString *name;
 }
@@ -19,7 +19,7 @@
 
 @end
 
-@interface SampleClass()
+@interface ExtensionSampleClass()
 {
    NSString *internalID;
 }

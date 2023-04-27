@@ -13,6 +13,7 @@
 #import "Student.h"
 #import "OOPS_Category.h"
 #import "OOPS_Extension.h"
+#import "OOPS_Protocol.h"
 
 @implementation OOPS
 
@@ -69,9 +70,15 @@
 
 -(void) TestExtension
 {
-    SampleClass *sampleClass = [[SampleClass alloc]init];
-    [sampleClass setInternalID];
-    NSLog(@"Sample Class Name : %@ External ID : %@", [sampleClass getName], [sampleClass getExternalID]);
+    ExtensionSampleClass *extension_sample = [[ExtensionSampleClass alloc]init];
+    [extension_sample setInternalID];
+    NSLog(@"Sample Class Name : %@ External ID : %@", [extension_sample getName], [extension_sample getExternalID]);
+}
+
+-(void) TestProtocol
+{
+    PrintProtocolSample *protocol_sample = [PrintProtocolSample alloc];
+    [protocol_sample startAction];
 }
 
 -(void) Learn
@@ -96,6 +103,9 @@
     
     // Lession 6 - Extension
 //    [self TestExtension];
+    
+    // Lession 7 - Protocol
+//    [self TestProtocol];
 }
 
 @end

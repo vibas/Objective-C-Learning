@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "OOPS_Extension.h"
 
-@implementation SampleClass
+@implementation ExtensionSampleClass
 
 -(id)init
 {
