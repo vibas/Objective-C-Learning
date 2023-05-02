@@ -44,6 +44,12 @@
 // Typedef
 typedef int NumberArray[];
 typedef char *StringArray[];
+typedef enum
+{
+    START,
+    PAUSE,
+    END
+} GameState;
 
 @implementation Basic
 
@@ -178,6 +184,9 @@ double (^multiplyTwoValues)(double, double) = ^(double firstValue, double second
 {
     NumberArray numbers = {1,2,3};
     StringArray strings = {"Hello", "World","!"};
+    GameState state = PAUSE;
+    
+    NSLog(@"Game State = %d",state);
     
     for(int i=0;i<3;i++)
     {
@@ -226,7 +235,7 @@ double (^multiplyTwoValues)(double, double) = ^(double firstValue, double second
     NSLog(@"================ BASIC PROGRAMMING ===============");
     
     //Lession 1 - Print Hello World
-    [self HelloWorld];
+//    [self HelloWorld];
     
     // Lession 2 - Variable and Datatypes
 //    [self VariableTest];
@@ -262,7 +271,7 @@ double (^multiplyTwoValues)(double, double) = ^(double firstValue, double second
 //    [self TestPreprocessor];
     
     // Lession 12 - Typedef
-//    [self TestTypedef];
+    [self TestTypedef];
     
     // Lession 13 - Logger Configuration
 //    [self TestConfigurableLogger];
