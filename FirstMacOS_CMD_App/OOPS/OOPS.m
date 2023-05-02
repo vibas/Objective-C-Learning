@@ -14,6 +14,8 @@
 #import "OOPS_Category.h"
 #import "OOPS_Extension.h"
 #import "OOPS_Protocol.h"
+#import "A.h"
+#import "B.h"
 
 @implementation OOPS
 
@@ -98,6 +100,14 @@
     [obj2 PrintArea];
 }
 
+-(void) TestClassAttribute
+{
+    A *a = [[A alloc]init];
+    B *b = [[B alloc]init];
+    NSLog(@"A's B ness = %c",[[a CalculateMyBness] GetMyChar]);
+    NSLog(@"B's A ness = %c",[[b CaclulateMyAness] GetMyChar]);
+}
+
 -(void) Learn
 {
     [super Learn];
@@ -126,6 +136,11 @@
     
     // Lession 8 - Dynamic binding
 //    [self TestDynamicBinding];
+    
+    // Lession 9 - Class Attribute
+//    [self TestClassAttribute];
+
+    
 }
 
 @end
