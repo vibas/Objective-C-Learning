@@ -16,6 +16,7 @@
 #import "OOPS_Protocol.h"
 #import "A.h"
 #import "B.h"
+#import "CompositeObj.h"
 
 @implementation OOPS
 
@@ -108,6 +109,17 @@
     NSLog(@"B's A ness = %c",[[b CaclulateMyAness] GetMyChar]);
 }
 
+-(void) TestCompositeObject
+{
+    NSLog(@"TEST COMPOSITE OBJECTS");
+    int intArr[] = {1,2,3,4,5};
+    char vowels[] = {'a','e','i','o','u'};
+    MyArray *intArray = [[IntArray alloc]init:intArr withSize:5];
+    MyArray *charArray = [[CharArray alloc]init:vowels withSize:5];
+    [intArray Print];
+    [charArray Print];
+}
+
 -(void) Learn
 {
     [super Learn];
@@ -140,7 +152,8 @@
     // Lession 9 - Class Attribute
 //    [self TestClassAttribute];
 
-    
+    // Lession 10 - Composite Object
+    [self TestCompositeObject];
 }
 
 @end

@@ -14,7 +14,7 @@
 {
     
     // Float Array
-    float floatArray[5] = {0,1,2,3,4};
+    float floatArray[] = {0,1,2,3,4};
     for(int i=0;i<5;i++)
     {
         NSLog(@"%f",floatArray[i]);

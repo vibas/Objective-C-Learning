@@ -17,6 +17,7 @@
 		3176CC2129F2BBD10049BFFE /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 3176CC2029F2BBD10049BFFE /* Test.c */; };
 		317D39F52A00EA6400E46600 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 317D39F42A00EA6400E46600 /* A.m */; };
 		317D39F72A00EBAE00E46600 /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 317D39F62A00EBAE00E46600 /* B.m */; };
+		317D39FA2A01400C00E46600 /* AbstractArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 317D39F92A01400C00E46600 /* AbstractArray.m */; };
 		318A8E4429F67B2000348986 /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4329F67B2000348986 /* StringTest.m */; };
 		318A8E4629F6874500348986 /* StructureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4529F6874500348986 /* StructureTest.m */; };
 		31A23BCA29EFE359009F9780 /* PointerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A23BC929EFE359009F9780 /* PointerTest.m */; };
@@ -66,6 +67,8 @@
 		317D39F32A00EA4900E46600 /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
 		317D39F42A00EA6400E46600 /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
 		317D39F62A00EBAE00E46600 /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
+		317D39F92A01400C00E46600 /* AbstractArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractArray.m; sourceTree = "<group>"; };
+		317D39FB2A01452500E46600 /* CompositeObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositeObj.h; sourceTree = "<group>"; };
 		318A8E4329F67B2000348986 /* StringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
 		318A8E4529F6874500348986 /* StructureTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StructureTest.m; sourceTree = "<group>"; };
 		31A23BC929EFE359009F9780 /* PointerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerTest.m; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 		3100118629F7E7CE00BB2C21 /* OOPS */ = {
 			isa = PBXGroup;
 			children = (
+				317D39F82A013FE700E46600 /* CompositeObject */,
 				317D39F12A00EA1400E46600 /* ClassAttribute */,
 				31CE843929FA99E600A7BA77 /* Protocol */,
 				31CE843429FA8EB400A7BA77 /* Extension */,
@@ -167,6 +171,15 @@
 				317D39F62A00EBAE00E46600 /* B.m */,
 			);
 			path = ClassAttribute;
+			sourceTree = "<group>";
+		};
+		317D39F82A013FE700E46600 /* CompositeObject */ = {
+			isa = PBXGroup;
+			children = (
+				317D39F92A01400C00E46600 /* AbstractArray.m */,
+				317D39FB2A01452500E46600 /* CompositeObj.h */,
+			);
+			path = CompositeObject;
 			sourceTree = "<group>";
 		};
 		31A6C75429B207CD00ECCF2F = {
@@ -306,6 +319,7 @@
 				3100118D29F7FCEB00BB2C21 /* Crow.m in Sources */,
 				3100118B29F7FB7D00BB2C21 /* Bird.m in Sources */,
 				31EC860329BB53F9008C717D /* LoopTest.m in Sources */,
+				317D39FA2A01400C00E46600 /* AbstractArray.m in Sources */,
 				316C4B3629F92141004F1F01 /* Basic.m in Sources */,
 				316C4B3829F9214E004F1F01 /* OOPS.m in Sources */,
 				318A8E4629F6874500348986 /* StructureTest.m in Sources */,
