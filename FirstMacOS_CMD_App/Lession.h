@@ -39,4 +39,14 @@
 -(void) Learn;
 @end
 
+#pragma mark - FOUNDATION FRAMEWORK
+@interface FOUNDATION_FRAMEWORK : Lession
+-(void) TestDataStorage;
+-(void) TestTextAndString;
+-(void) TestDatesAndTime;
+-(void) TestExceptionHandling;
+-(void) TestFileHandling;
+-(void) TestURLLoadingSystem;
+@end
+
 #endif /* Lession_h */

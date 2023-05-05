@@ -16,7 +16,7 @@ int main(int argc, const char * argv[])
     @autoreleasepool
     {
         // Create lession object and call its Learn method
-        Lession *lession = [OOPS alloc];
+        Lession *lession = [FOUNDATION_FRAMEWORK alloc];
         [lession Learn];
     }
     return 0;

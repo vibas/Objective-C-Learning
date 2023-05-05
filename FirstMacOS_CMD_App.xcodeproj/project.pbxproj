@@ -22,6 +22,7 @@
 		318A8E4629F6874500348986 /* StructureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 318A8E4529F6874500348986 /* StructureTest.m */; };
 		31A23BCA29EFE359009F9780 /* PointerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A23BC929EFE359009F9780 /* PointerTest.m */; };
 		31A6C76129B207CD00ECCF2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A6C76029B207CD00ECCF2F /* main.m */; };
+		31A897312A052C1000BDFDD1 /* FOUNDATION_FRAMEWORK.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A897302A052C1000BDFDD1 /* FOUNDATION_FRAMEWORK.m */; };
 		31C93A4E29EE7CBA00FCE5CA /* NSNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C93A4D29EE7CBA00FCE5CA /* NSNumberTest.m */; };
 		31C93A5229EEA1AE00FCE5CA /* ArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C93A5129EEA1AE00FCE5CA /* ArrayTest.m */; };
 		31CE842F29FA57EE00A7BA77 /* CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE842E29FA57EE00A7BA77 /* CategoryTest.m */; };
@@ -74,6 +75,7 @@
 		31A23BC929EFE359009F9780 /* PointerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerTest.m; sourceTree = "<group>"; };
 		31A6C75D29B207CD00ECCF2F /* FirstMacOS_CMD_App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstMacOS_CMD_App; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A6C76029B207CD00ECCF2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31A897302A052C1000BDFDD1 /* FOUNDATION_FRAMEWORK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOUNDATION_FRAMEWORK.m; sourceTree = "<group>"; };
 		31C93A4D29EE7CBA00FCE5CA /* NSNumberTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNumberTest.m; sourceTree = "<group>"; };
 		31C93A5129EEA1AE00FCE5CA /* ArrayTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayTest.m; sourceTree = "<group>"; };
 		31CE842E29FA57EE00A7BA77 /* CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTest.m; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		31A6C75F29B207CD00ECCF2F /* FirstMacOS_CMD_App */ = {
 			isa = PBXGroup;
 			children = (
+				31A8972F2A052AC700BDFDD1 /* Foundation */,
 				316C4B3429F9211C004F1F01 /* Basics */,
 				3100118629F7E7CE00BB2C21 /* OOPS */,
 				31A6C76029B207CD00ECCF2F /* main.m */,
@@ -208,6 +211,14 @@
 				31EE06AD29F92C9C00B8F96B /* Lession.m */,
 			);
 			path = FirstMacOS_CMD_App;
+			sourceTree = "<group>";
+		};
+		31A8972F2A052AC700BDFDD1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				31A897302A052C1000BDFDD1 /* FOUNDATION_FRAMEWORK.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		31CE842D29FA57D100A7BA77 /* Category */ = {
@@ -333,6 +344,7 @@
 				31EE06B229F94C7200B8F96B /* Shape.m in Sources */,
 				31CE843C29FA9AF200A7BA77 /* ProtocolTest.m in Sources */,
 				31C93A5229EEA1AE00FCE5CA /* ArrayTest.m in Sources */,
+				31A897312A052C1000BDFDD1 /* FOUNDATION_FRAMEWORK.m in Sources */,
 				31CE843829FA8EFA00A7BA77 /* ExtensionTest.m in Sources */,
 				31A23BCA29EFE359009F9780 /* PointerTest.m in Sources */,
 				318A8E4429F67B2000348986 /* StringTest.m in Sources */,

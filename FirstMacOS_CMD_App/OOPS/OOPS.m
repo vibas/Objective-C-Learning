@@ -153,7 +153,9 @@
 //    [self TestClassAttribute];
 
     // Lession 10 - Composite Object
-    [self TestCompositeObject];
+//    [self TestCompositeObject];
+    
+    
 }
 
 @end
