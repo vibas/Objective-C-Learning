@@ -88,8 +88,8 @@
     
     // -------- mutable NSDictionary ----------
     NSMutableDictionary *nsMutDict = [[NSMutableDictionary alloc]init];
-    [nsMutDict setValue:@500 forKey:@"Key1"];
-    [nsMutDict setValue:@600 forKey:@"Key2"];
+    [nsMutDict setValue:@500 forKey:@"Key_1"];
+    [nsMutDict setValue:@600 forKey:@"Key_2"];
     NSLog(@"Mutable Dict Key Value Pairs %@",nsMutDict);
     
     
