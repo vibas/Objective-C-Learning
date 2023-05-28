@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -294,7 +294,6 @@
 		31A6C75529B207CD00ECCF2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					31A6C75C29B207CD00ECCF2F = {
@@ -303,7 +302,7 @@
 				};
 			};
 			buildConfigurationList = 31A6C75829B207CD00ECCF2F /* Build configuration list for PBXProject "FirstMacOS_CMD_App" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -476,6 +475,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -487,6 +487,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
